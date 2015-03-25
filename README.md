@@ -1,1 +1,2 @@
 这是ibaby公司的monkeyrunner自动化测试脚本
+增加第二段测试
