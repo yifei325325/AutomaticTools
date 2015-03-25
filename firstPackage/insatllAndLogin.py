@@ -5,9 +5,11 @@ Created on 2015年3月24日
 
 @author: Administrator
 '''
+
+print 'started'
 from com.android.monkeyrunner import MonkeyRunner as mr
 from com.android.monkeyrunner import MonkeyDevice as md
-
+print 'import complete'
 def unlock():#解锁
     lock_x = 537
     lock_y1 = 1500
@@ -40,7 +42,7 @@ def listen():
     mr.alert(u'如果已经看到监控画面，请点击确定按钮，测试将继续进行。否则，请等待。。。',u'温馨提示',u'确定')
     listen_x = 135
     listen_y = 1795
-    for i in range(1,21):
+    for i in range(1,5):
         device.touch(listen_x,listen_y,'DOWN_AND_UP')#listen
         print 'Listening...'
         mr.sleep(2)
@@ -60,7 +62,7 @@ def speak():
     mr.alert(u'如果已经看到监控画面，请点击确定按钮，测试将继续进行。否则，请等待。。。',u'温馨提示',u'确定')
     speak_x = 408
     speak_y = 1795
-    for i in range(1,21):
+    for i in range(1,5):
         device.touch(speak_x,speak_y,'DOWN_AND_UP')#listen
         print 'Speaking...'
         mr.sleep(2)
@@ -84,18 +86,21 @@ if __name__ == '__main__':
     device.press('KEYCODE_HOME','DOWN_AND_UP')
     mr.sleep(1)
     unlock()
-    myChoice = mr.choice('which action will you do?',['install package','remove package','listen','speak'],'Choice',)
-    
-  
-    if myChoice == 0:
-        install()
-    elif myChoice == 1:
-        remove()
-    elif myChoice == 2:
-        listen()
-    elif myChoice == 3:
-        speak()        
-    else:pass
+ 
+    a = True
+    while a:
+        myChoice = mr.choice('which action will you do?',['install package','remove package','listen','speak'],'Choice',)
+        if myChoice == 0:
+            install()
+        elif myChoice == 1:
+            remove()
+        elif myChoice == 2:
+            listen()
+        elif myChoice == 3:
+            speak()        
+        elif myChoice == -1:
+            a = False
+    print 'test complete'
 
 
 
