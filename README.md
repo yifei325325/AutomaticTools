@@ -1,2 +1,1 @@
-# ibaby
-monkeyrunner
+这是ibaby公司的monkeyrunner自动化测试脚本
