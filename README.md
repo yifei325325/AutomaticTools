@@ -1,1 +1,2 @@
 这是ibaby公司的monkeyrunner自动化测试脚本
+最后一次测试了
