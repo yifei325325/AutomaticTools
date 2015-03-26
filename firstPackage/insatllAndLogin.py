@@ -39,6 +39,7 @@ def remove():
     
 def listen():
     device.startActivity(component="com.ibaby/com.ibaby.Ui.Login.LoginMainActivity")
+    mr.sleep(5)
     mr.alert(u'如果已经看到监控画面，请点击确定按钮，测试将继续进行。否则，请等待。。。',u'温馨提示',u'确定')
     listen_x = 135
     listen_y = 1795
@@ -59,6 +60,7 @@ def listen():
     
 def speak():
     device.startActivity(component="com.ibaby/com.ibaby.Ui.Login.LoginMainActivity")
+    mr.sleep(5)
     mr.alert(u'如果已经看到监控画面，请点击确定按钮，测试将继续进行。否则，请等待。。。',u'温馨提示',u'确定')
     speak_x = 408
     speak_y = 1795
