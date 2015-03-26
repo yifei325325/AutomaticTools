@@ -3,7 +3,7 @@
 '''
 Created on 2015年3月24日
 
-@author: Administrator
+@author: kenny
 '''
 
 print 'started'
