@@ -11,7 +11,7 @@ from com.android.monkeyrunner import MonkeyRunner as mr
 from com.android.monkeyrunner import MonkeyDevice as md
 import time
 print 'import complete'
-realtime = time.strftime('%m%d%H%M%S',time.localtime())
+realtime = time.strftime('%m%d%H%M%S',time.localtime())#生成一个当前系统时间的字符串
 def unlock():#解锁
     lock_x = 537
     lock_y1 = 1500
@@ -24,7 +24,7 @@ def install():#安装测试包
     device.startActivity(component="com.ibaby/com.ibaby.Ui.Login.LoginMainActivity")
     mr.sleep(2)
     result = device.takeSnapshot()
-    result.writeToFile('d:\demo\snapshot\installed%s.png'%realtime,'png')
+    result.writeToFile('d:\demo\snapshot\installed%s.png'%realtime,'png')#照片文件名和当前时间字符串进行拼接
     print 'installed'
     
     #登录
