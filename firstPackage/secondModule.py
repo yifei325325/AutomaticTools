@@ -3,7 +3,7 @@
 '''
 Created on 2015年3月24日
 
-@author: Administrator
+@author: kenny
 '''
 from com.android.monkeyrunner import MonkeyRunner as mr
 from com.android.monkeyrunner import MonkeyDevice as md
@@ -32,15 +32,3 @@ result.writeToFile('d:\demo\snapshot\insatlled.png','png')
 '''
 print 'removed'
 #mr.alert(u'如果已经看到监控画面，请点击确定按钮，测试将继续进行。否则，请等待。。。',u'温馨提示',u'确定')
-
-
-
-
-
-'''
-
-'''
-
-
-
-
