@@ -13,9 +13,9 @@ import time
 print 'import complete'
 realtime = time.strftime('%m%d%H%M%S',time.localtime())#生成一个当前系统时间的字符串
 EmailAddress = 'test132@163.com'
-packageName = 'IBaby Care_20150326_v2.3.22_www.apk'
+packageName = 'IBaby Care_20150327_v2.3.22_www.apk'
 Pwd = '111111'
-def unlock():#解锁
+def unlock():#解锁 
     lock_x = 537
     lock_y1 = 1500
     lock_y2 = 800
