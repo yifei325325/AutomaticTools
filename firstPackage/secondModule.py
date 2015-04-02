@@ -5,8 +5,8 @@ Created on 2015年3月24日
 
 @author: kenny
 '''
-from com.android.monkeyrunner import MonkeyRunner as mr
-from com.android.monkeyrunner import MonkeyDevice as md
+from com.android.monkeyrunner import MonkeyRunner as mr  # @UnresolvedImport
+from com.android.monkeyrunner import MonkeyDevice as md  # @UnusedImport @UnresolvedImport
 
 device = mr.waitForConnection()
 mr.sleep(1)
