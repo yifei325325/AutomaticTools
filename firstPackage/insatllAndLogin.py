@@ -7,8 +7,8 @@ Created on 2015年3月24日
 '''
 
 print 'started'
-from com.android.monkeyrunner import MonkeyRunner as mr
-from com.android.monkeyrunner import MonkeyDevice as md
+from com.android.monkeyrunner import MonkeyRunner as mr  # @UnresolvedImport
+from com.android.monkeyrunner import MonkeyDevice as md  # @UnresolvedImport @UnusedImport
 import time
 print 'import complete'
 realtime = time.strftime('%m%d%H%M%S',time.localtime())#生成一个当前系统时间的字符串
